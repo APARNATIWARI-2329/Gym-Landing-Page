@@ -1,0 +1,206 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#111;
+color:white;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#000;
+}
+
+.logo{
+font-size:30px;
+font-weight:700;
+color:#ff4d6d;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ff4d6d;
+}
+
+.btn{
+background:#ff4d6d;
+color:white;
+padding:10px 20px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+.hero{
+height:90vh;
+
+background:
+linear-gradient(
+rgba(0,0,0,.6),
+rgba(0,0,0,.6)
+),
+url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1600");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+text-align:center;
+}
+
+.hero-content{
+max-width:700px;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:25px;
+}
+
+.hero-btn{
+background:#ff4d6d;
+color:white;
+padding:15px 30px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+font-size:18px;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+padding:60px 10%;
+text-align:center;
+background:#1b1b1b;
+}
+
+.stat h2{
+font-size:40px;
+color:#ff4d6d;
+}
+
+.plans{
+padding:80px 10%;
+text-align:center;
+}
+
+.plans h2{
+font-size:40px;
+margin-bottom:40px;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.card{
+background:#1e1e1e;
+padding:30px;
+width:250px;
+border-radius:15px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card p{
+margin:20px 0;
+font-size:25px;
+}
+
+.card button{
+background:#ff4d6d;
+border:none;
+color:white;
+padding:10px 20px;
+border-radius:8px;
+cursor:pointer;
+}
+
+.popular{
+border:2px solid #ff4d6d;
+}
+
+.form-section{
+padding:80px 10%;
+text-align:center;
+}
+
+form{
+display:flex;
+flex-direction:column;
+gap:15px;
+max-width:500px;
+margin:auto;
+}
+
+input{
+padding:15px;
+border:none;
+border-radius:8px;
+}
+
+form button{
+background:#ff4d6d;
+color:white;
+border:none;
+padding:15px;
+border-radius:8px;
+cursor:pointer;
+}
+
+footer{
+padding:25px;
+text-align:center;
+background:#000;
+}
+
+@media(max-width:768px){
+
+nav{
+flex-direction:column;
+gap:20px;
+}
+
+.stats{
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+}
